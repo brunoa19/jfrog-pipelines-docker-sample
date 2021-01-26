@@ -70,7 +70,7 @@ pipelines:
       - name: promote_dbp_build
         type: PromoteBuild
         configuration:
-          targetRepository: demo-pipelines
+          targetRepository: pipeliness
           integrations:
             - name: artifactory
           inputResources:

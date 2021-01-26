@@ -12,7 +12,7 @@ resources:
     configuration:
       registry: artifactory                                # <-- replace with your artifactory integration
       sourceRepository: pipelines               # <-- required if registry is Artifactory
-      imageName: shipadev.jfrog.io/artifactory/pipelines/podinfo  # < -- replace with your image path and name
+      imageName: shipadev.jfrog.io/pipelines/jfrog-sample  # < -- replace with your image path and name
       imageTag: latest
       autoPull: true
       
@@ -40,7 +40,7 @@ pipelines:
           affinityGroup: dbp_group
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: shipadev.jfrog.io/artifactory/pipelines/podinfo  # replace with your image path and name
+          dockerImageName: shipadev.jfrog.io/pipelines/jfrog-sample  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
             - name: dbp_repo

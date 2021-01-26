@@ -19,7 +19,8 @@ openssh-client \
 ftp \
 gettext \
 smbclient \
-mercurial
+mercurial \
+apache2
 
 echo "================= Installing Python packages =================="
 apt-get install -q -y \
